@@ -1,0 +1,97 @@
+@media(max-width:1024px) {
+
+    .header-container {
+        justify-content: flex-start;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .contact-btn {
+        margin-left: auto;
+        margin-right: 20px;
+        height: 44px;
+        padding: 0 20px;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .contact-btn img {
+        width: 16px;
+        height: auto;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero-wrapper,
+    .why-top,
+    .why-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .benefits li {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+        line-height: 75px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .why-top {
+        text-align: center;
+    }
+
+    .why-heading h2 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .why-heading .arrow {
+        right: 5%;
+        bottom: -80px;
+    }
+
+    .why-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .drawer-links a {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .drawer-links a.active {
+        color: #4B5BDC;
+    }
+
+    .drawer-links img {
+        width: 24px;
+        height: auto;
+    }
+
+}

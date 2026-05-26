@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F4F4F6;
+    color: #111;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-nav ul {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+}
+
+.desktop-nav a {
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.desktop-nav .active {
+    color: #4B5BDC;
+}
+
+.btn {
+    height: 56px;
+    border-radius: 10px;
+    padding: 0 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #4B5BDC;
+    color: #fff;
+    border: 2px solid #4B5BDC;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #4B5BDC;
+}
+
+.btn-outline {
+    border: 2px solid #4B5BDC;
+    color: #4B5BDC;
+}
+
+.btn-outline:hover {
+    background: #4B5BDC;
+    color: #fff;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    padding: 60px 0 90px;
+}
+
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 85px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #4B5BDC;
+    position: relative;
+    display: inline-block;
+}
+
+.underline {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+}
+
+.hero-content p {
+    margin: 40px 0;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    margin-top: 45px;
+    display: flex;
+    gap: 24px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.top-pattern {
+    position: absolute;
+    top: 150px;
+    left: -100px;
+    z-index: -1;
+}
+
+/* WHY */
+
+.why-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.bottom-pattern {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+}
+
+.why-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.why-heading {
+    position: relative;
+}
+
+.why-heading h2 {
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.arrow {
+    position: absolute;
+    right: -40px;
+    bottom: -80px;
+}
+
+.why-text p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.why-wrapper {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.card {
+    border: 1px solid #D7D9F7;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    gap: 24px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #4B5BDC;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover h3 {
+    color: #4B5BDC;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* DRAWER */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 380px;
+    height: 100vh;
+    background: #fff;
+    padding: 30px;
+    transition: 0.4s;
+    z-index: 999;
+}
+
+.drawer.active {
+    right: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.drawer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    border: none;
+    background: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.drawer-links {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.drawer-links a {
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.drawer-contact {
+    width: 100%;
+    margin-top: 50px;
+}

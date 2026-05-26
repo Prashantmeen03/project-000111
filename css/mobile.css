@@ -1,0 +1,129 @@
+@media(max-width:767px){
+
+  .container{
+    width:92%;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .header{
+    padding:14px 0;
+  }
+
+  .contact-btn{
+    display:none;
+  }
+
+  .hero{
+    padding:30px 0 60px;
+  }
+
+  .hero-content h1{
+    font-size:38px;
+    line-height:48px;
+  }
+
+  .highlight {
+    display: inline-block;
+  }
+
+  .underline {
+    width: 100%;
+    bottom: -5px;
+  }
+
+  .hero-content p{
+    font-size:18px;
+    line-height:32px;
+    margin:30px 0;
+  }
+
+  .benefits {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .benefits li{
+    font-size:18px;
+    line-height:normal;
+    align-items:flex-start;
+    text-align:left;
+    justify-content: flex-start;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .btn{
+    width:100%;
+    font-size:19px;
+  }
+
+  .top-pattern {
+    top: -20px;
+    width: 50px;
+    left: 0;
+  }
+
+  .why-section{
+    padding:60px 0;
+  }
+
+  .why-heading h2{
+    font-size:34px;
+    line-height:48px;
+    text-align:center;
+  }
+
+  .why-text p{
+    font-size:18px;
+    line-height:32px;
+    text-align:center;
+  }
+
+  .card{
+    flex-direction:row;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .card h3{
+    font-size:22px;
+    line-height:32px;
+  }
+
+  .card p{
+    font-size:18px;
+    line-height:32px;
+  }
+
+  .why-heading .arrow {
+    width: 45px;
+    bottom: -280px;
+    right: 0;
+  }
+
+  .bottom-pattern {
+    width: 60px;
+    top: auto;
+    bottom: auto;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .drawer{
+    width:85%;
+  }
+
+  .drawer-links a{
+    font-size:19px;
+  }
+
+}
