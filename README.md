@@ -1,6 +1,6 @@
 # Simplifying Compliance | Research Analysts
 
-**🔴 Live Demo:** [View Project Here](https://6a15ed88bacb31c5eb45f336--project-000111.netlify.app/)
+**🔴 Live Demo:** (https://6a15ed88bacb31c5eb45f336--project-000111.netlify.app/)
 
 A responsive, modern landing page designed to help research analysts and firms navigate complex compliance requirements. 
 
