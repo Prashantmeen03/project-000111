@@ -1,54 +1,41 @@
-# Simplifying Compliance | Research Analysts
+# Simplifying Compliance for Research Analysts
 
-**🔴 Live Demo:** (https://6a15ed88bacb31c5eb45f336--project-000111.netlify.app/)
+A modern, responsive landing page designed for research analysts and firms to manage their compliance needs seamlessly. This project focuses on a clean user experience with dynamic micro-interactions and a fully responsive layout.
 
-A responsive, modern landing page designed to help research analysts and firms navigate complex compliance requirements. 
+## Features
 
-## 🚀 Overview
+- **Fully Responsive Design**: Ensures a flawless experience across Desktop, Tablet, and Mobile devices.
+- **Dynamic Interactions**: Includes sleek hover effects on cards and list items for a premium feel.
+- **Mobile Drawer Navigation**: A smooth slide-out navigation menu for mobile and tablet users.
+- **Modern Typography and Layout**: Uses the 'Inter' font and a clean CSS grid/flexbox based architecture.
 
-This project is a static front-end web application built with a focus on **pixel-perfect responsive design**. It features a clean layout, customized typography, and tailored user experiences across desktop, tablet, and mobile devices.
+## Tech Stack
 
-### Features
-- **Responsive Layout**: Fluidly adapts to Desktop, Tablet (max-width: 1024px), and Mobile (max-width: 767px) screens.
-- **Mobile Drawer Navigation**: A smooth slide-out hamburger menu for seamless mobile and tablet navigation.
-- **Custom Typography**: Implements specific typography scales for different breakpoints using the Roboto font.
-- **Pixel-Perfect Styling**: Exacting attention to detail matching the original design mockups, including precise positioning of decorative SVG/PNG vector elements.
+- **HTML5**: Semantic and accessible markup.
+- **CSS3**: Custom vanilla CSS with distinct stylesheets for desktop, tablet, and mobile views (`desktop.css`, `tablet.css`, `mobile.css`).
+- **Vanilla JavaScript**: Lightweight script (`script.js`) handling the mobile drawer state and interactions.
 
-## 🛠️ Tech Stack
+## Project Structure
 
-- **HTML5**: Semantic markup for the landing page structure.
-- **CSS3**: Vanilla CSS with a modular approach.
-  - `desktop.css`: Global styles and desktop layout.
-  - `tablet.css`: Media queries for tablet devices (<= 1024px).
-  - `mobile.css`: Media queries for mobile devices (<= 767px).
-- **JavaScript (Vanilla)**: Lightweight DOM manipulation for toggling the mobile drawer overlay.
-
-## 📂 Project Structure
-
-```text
-/
-├── index.html            # Main HTML file
+```
+├── assets/         # Images, icons, and illustrations
 ├── css/
-│   ├── desktop.css       # Desktop styles
-│   ├── tablet.css        # Tablet overrides
-│   └── mobile.css        # Mobile overrides
+│   ├── desktop.css # Styles specifically for desktop views
+│   ├── tablet.css  # Styles specifically for tablet views
+│   └── mobile.css  # Styles specifically for mobile views
 ├── js/
-│   └── script.js         # Drawer menu logic
-└── assets/               # Images, icons, and vector patterns
+│   └── script.js   # Mobile and tablet navigation drawer logic
+└── index.html      # Main landing page markup
 ```
 
-## 💻 Getting Started
+## Getting Started
 
-To view this project locally, simply clone the repository and open the `index.html` file in any modern web browser. 
+1. Clone this repository.
+2. Open `index.html` in your preferred web browser to view the project.
+3. No build steps or package managers are required.
 
-```bash
-# Clone the repository
-git clone https://github.com/Prashantmeen03/project-000111.git
+## Key Benefits Highlighted
 
-# Navigate into the project
-cd project-000111
-
-# Open index.html in your preferred browser
-```
-
-No build tools, package managers, or local servers are required!
+- End-To-End Compliance Support
+- Regulatory Filings Made Simple
+- Tailored Solutions For Independent Analysts & Firms

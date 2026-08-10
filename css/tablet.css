@@ -182,11 +182,11 @@
   .mobile-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, .35);
+    background: rgba(0, 0, 0, 0.35);
     z-index: 50;
   }
 
-  .mobile-drawer {
+  .tablet-drawer {
     position: fixed;
     right: 0;
     top: 0;
@@ -196,11 +196,11 @@
     background: var(--color-white);
     z-index: 60;
     transform: translateX(100%);
-    transition: transform .25s ease;
+    transition: transform 0.25s ease;
     display: block;
   }
 
-  .mobile-drawer.open {
+  .tablet-drawer.open {
     transform: translateX(0);
   }
 
@@ -226,14 +226,14 @@
     cursor: pointer;
   }
 
-  .mobile-drawer nav {
+  .tablet-drawer nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 50px;
   }
 
-  .mobile-drawer nav a {
+  .tablet-drawer nav a {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -243,13 +243,13 @@
     color: var(--color-dark);
   }
 
-  .mobile-drawer nav a img {
+  .tablet-drawer nav a img {
     width: 20px;
     height: 20px;
     object-fit: contain;
   }
 
-  .mobile-drawer nav a.active {
+  .tablet-drawer nav a.active {
     color: var(--color-primary);
   }
 

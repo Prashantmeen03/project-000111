@@ -11,7 +11,7 @@
   --color-border: #d9ddff;
   --color-white: #fff;
   --color-card-bg: #fafbff;
-  --color-overlay: rgba(0, 0, 0, .35);
+  --color-overlay: rgba(0, 0, 0, 0.35);
 
   --space-xs: 10px;
   --space-sm: 16px;
@@ -89,7 +89,7 @@ button {
 }
 
 .desktop-nav a {
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 .desktop-nav a:hover,
@@ -126,11 +126,12 @@ button {
 }
 
 .header-contact:hover img {
-  filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1679%) hue-rotate(222deg) brightness(88%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(32%) sepia(83%) saturate(1679%)
+    hue-rotate(222deg) brightness(88%) contrast(92%);
 }
 
 .menu-button,
-.mobile-drawer,
+.tablet-drawer,
 .mobile-overlay {
   display: none;
 }
@@ -207,12 +208,24 @@ button {
   gap: 14px;
   font-size: 16px;
   line-height: 1.3;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.benefits li:hover {
+  transform: translateX(6px);
+  color: var(--color-primary);
 }
 
 .benefits img {
   width: 24px;
   height: 24px;
   flex: 0 0 24px;
+  transition: transform 0.3s ease;
+}
+
+.benefits li:hover img {
+  transform: scale(1.15);
 }
 
 .hero-buttons {
@@ -296,7 +309,7 @@ button {
   font-weight: 800;
 }
 
-.why-heading h2 span {
+.why-heading h2 span:not(.tablet-newline) {
   color: var(--color-primary);
 }
 
@@ -347,7 +360,7 @@ button {
   border-color: var(--color-primary);
 }
 
-.why-card>img {
+.why-card > img {
   width: 36px;
   height: 36px;
   object-fit: contain;
