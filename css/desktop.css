@@ -90,6 +90,7 @@ button {
 
 .desktop-nav a {
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .desktop-nav a:hover,
@@ -336,23 +337,23 @@ button {
   font-size: 16px;
   line-height: 1.8;
   max-width: 610px;
-  margin-bottom: 55px;
+  margin-bottom: 90px;
 }
 
 .why-cards {
   display: grid;
-  gap: 30px;
+  gap: 16px;
 }
 
 .why-card {
-  min-height: 140px;
+  min-height: 120px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-card-bg);
-  padding: 25px 28px;
+  padding: 24px;
   display: flex;
   align-items: flex-start;
-  gap: 28px;
+  gap: 20px;
   transition: all 0.3s ease;
 }
 
@@ -389,4 +390,10 @@ button {
   bottom: 22px;
   width: 138px;
   height: 35px;
+}
+
+@media (max-width: 1150px) {
+  .desktop-nav {
+    gap: 24px;
+  }
 }
