@@ -1,13 +1,18 @@
 /* MOBILE */
-@media (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
 
-  html {
+  html,
+  body {
     width: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
   }
 
-  body {
+  .page,
+  .desktop-design,
+  main {
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -16,354 +21,488 @@
     overflow-x: hidden;
   }
 
-  #root,
-  #app {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow-x: hidden;
-  }
-
-
-  .container {
-    width: calc(100% - 32px);
-  }
-
-  .underline {
-    display: none;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 100%;
-  }
+  /* NAVBAR */
 
   .site-header {
-    display: flex;
     width: 100%;
-    padding: 10px 16px;
-    flex-direction: row;
+    height: 54px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .header-inner {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #FFF;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.11);
-    height: auto;
+    gap: 10px;
   }
 
   .logo img {
-    width: 105px;
+    width: clamp(90px, 28vw, 105px);
     height: auto;
   }
 
+  .desktop-nav,
   .header-contact {
     display: none;
   }
 
   .menu-button {
+    width: 24px;
+    height: 24px;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
+
+  /* HERO */
 
   .hero {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding: 20px 0 0 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
-    align-self: stretch;
-  }
-
-  .hero-grid {
-    width: 100%;
-    min-height: auto;
-    padding-top: 7px;
-    gap: 36px;
-  }
-
-  .hero-copy {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 0 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    position: relative;
+    width: 375px;
+    height: 1062px;
+    margin-top: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
+  .hero-grid {
+    width: 375px;
+    height: 988px;
+    padding: 0;
+    margin: 0;
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .hero-copy {
+    width: 343px;
+    height: 650px;
+    padding: 26px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 26px;
+    box-sizing: border-box;
+  }
 
   .hero h1 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 343px;
+    height: 144px;
     margin: 0;
     padding: 0;
-    color: #000;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    font-size: clamp(32px, 8vw, 38px);
-    font-style: normal;
-    font-weight: 700;
+    font-size: 38px;
     line-height: 48px;
-    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .hero h1 br {
+    display: none;
   }
 
   .hero h1 .blue-word {
     color: #4356D6;
   }
 
-  .underline {
-    width: 100%;
-    height: auto;
-    bottom: -15px;
+  .hero h1 .underline {
+    display: none;
   }
 
   .hero-description {
-    width: 100%;
+    width: 343px;
+    height: 160px;
     margin: 0;
-    font-size: 14px;
-    line-height: 1.8;
+    padding: 0;
+    font-size: 18px;
+    line-height: 32px;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .benefits {
-    width: 100%;
-    max-width: 100%;
+    width: 315px;
+    height: 140px;
     margin: 0;
-    padding: 0 16px;
-    box-sizing: border-box;
-    gap: 10px;
+    margin-left: 14px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 6px;
+    align-self: flex-start;
+    box-sizing: border-box;
   }
 
   .benefits li {
+    width: 100%;
+    height: auto;
+    min-height: 32px;
+    display: flex;
+    align-items: flex-start;
     gap: 10px;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   .benefits img {
     width: 20px;
     height: 20px;
-    flex-basis: 20px;
+    flex: 0 0 20px;
+    margin-top: 6px;
   }
 
   .hero-buttons {
+    width: 343px;
+    height: 108px;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     gap: 16px;
-    align-self: stretch;
-
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0 16px;
+    align-self: flex-start;
     box-sizing: border-box;
   }
 
   .btn {
-    display: flex;
     width: 100%;
     height: 46px;
-    padding: 14px 22px;
-
-    justify-content: center;
+    padding: 0 20px;
+    display: flex;
     align-items: center;
-    gap: 10px;
-    align-self: stretch;
-
+    justify-content: center;
+    font-size: clamp(14px, 4vw, 16px);
     box-sizing: border-box;
-    border-radius: 8px;
-
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
-  }
-
-  /* Get Started */
-  .btn-primary {
-    border: 1px solid #4356D6;
-    background: #4356D6;
-    color: #FFF;
-  }
-
-  /* Book a Consultation */
-  .btn-outline {
-    border: 2px solid #4356D6;
-    background: transparent;
-    color: #4356D6;
   }
 
   .hero-visual {
-    padding-top: 36px;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+    width: 350px;
+    height: 296px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .hero-art {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
 
+  /* WHY */
+
   .why-section {
-    padding: 0 0 70px 0;
-    height: auto;
+    width: 100%;
+    height: 1446px;
+
+    padding: 0 16px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 36px;
+
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .why-both {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
+    width: 100%;
+    max-width: 343px;
+    height: 426px;
 
-  .why-grid {
+    margin: 0;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
-    gap: var(--space-25);
-    height: auto;
+    align-items: center;
+
+    gap: 26px;
+
+    box-sizing: border-box;
+  }
+
+  .why-pattern {
+    display: block;
+    width: 85px;
+    height: 21px;
+    position: absolute;
+    left:2px;
+    top: 807px;
   }
 
   .why-left,
   .why-right {
-    display: contents;
     width: 100%;
     height: auto;
+    display: contents;
   }
 
   .why-heading {
-    order: 1;
-    position: relative;
-    padding: 0;
-    margin: 0 0 26px 0;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+    height: 144px;
 
-  .why-heading h2 {
-    font-size: 27px;
-    line-height: 1.42;
-    letter-spacing: -.5px;
-    text-align: center;
-  }
-
-  .why-arrow {
-    position: absolute;
-    right: 20px;
-    left: auto;
-    width: 36px;
-    height: auto;
-    z-index: 2;
-    top: -15px;
-    bottom: auto;
-  }
-
-  .why-intro {
-    order: 2;
     margin: 0;
+    padding: 0;
 
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    align-self: stretch;
-
-    color: #000;
-    text-align: center;
-
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    text-transform: capitalize;
-  }
-
-  .why-art-wrap {
-    order: 3;
-    margin: 15px 0 10px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .why-art {
-    width: 90%;
-  }
-
-  .bottom-pattern {
-    order: 4;
-    position: relative;
-    width: 85px;
-    height: auto;
-    bottom: auto;
-    left: auto;
-    align-self: flex-start;
-    margin-left: 20px;
-  }
-
-  .why-cards {
-    order: 5;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-  }
-
-  .why-arrow {
-    position: absolute;
-    right: 5%;
-    top: -10px;
-    width: 34px;
-    height: auto;
-    z-index: 2;
-  }
-
-  .why-card {
-    min-height: auto;
-    padding: 16px;
-    gap: 16px;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
     box-sizing: border-box;
   }
 
+  .why-heading h2 {
+    width: 100%;
+    height: 144px;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+  .why-heading h2 .blue-word {
+    display: inline;
+    white-space: normal;
+  }
+
+  .why-heading h2 br {
+    display: none;
+  }
+
+  .why-intro {
+    width: 100%;
+    height: 256px;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+  .why-grid {
+    width: 100%;
+    max-width: 343px;
+
+    height: 984px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 26px;
+
+    box-sizing: border-box;
+  }
+
+  .why-art-wrap {
+    width: 100%;
+    height: 343px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    box-sizing: border-box;
+  }
+
+  .why-art {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+    display: block;
+  }
+
+  .why-arrow {
+    position: absolute;
+
+    left: 283px;
+    top: 440px;
+
+    width: 73px;
+    height: 63px;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 2;
+  }
+
+  .why-cards {
+    width: 100%;
+    height: 615px;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 26px;
+
+    box-sizing: border-box;
+  }
+
+  .why-card {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    margin: 0;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: 11px;
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+  }
+
+  .why-card.regulatory-clarity {
+    height: 177px;
+  }
+
+  .why-card.hassle-free-filings {
+    height: 204px;
+  }
+
+  .why-card.risk-protection {
+    height: 182px;
+  }
+
   .why-card>img {
-    width: 32px;
-    height: 32px;
-    flex-basis: 32px;
+    width: 36px;
+    height: 36px;
+
+    margin: 0;
+    padding: 0;
+
+    flex: 0 0 36px;
+
+    object-fit: contain;
+  }
+
+  .why-card>div {
+    width: calc(100% - 48px);
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    box-sizing: border-box;
   }
 
   .why-card h3 {
-    font-size: 16px;
-    margin-bottom: 12px;
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 600;
+
+    white-space: normal;
+
+    box-sizing: border-box;
   }
 
   .why-card p {
-    font-size: 14px;
-    line-height: 1.8;
     width: 100%;
     height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+
+    box-sizing: border-box;
   }
 
-  /* Mobile drawer */
+  .why-card.regulatory-clarity h3 {
+    width: 193px;
+    height: 32px;
+  }
+
+  .why-card.regulatory-clarity p {
+    width: 241px;
+    height: 107px;
+  }
+
+  .why-card.hassle-free-filings h3 {
+    width: 241px;
+    height: 61px;
+  }
+
+  .why-card.hassle-free-filings p {
+    width: 241px;
+    height: 92px;
+  }
+
+  .why-card.risk-protection h3 {
+    width: 165px;
+    height: 32px;
+  }
+
+  .why-card.risk-protection p {
+    width: 241px;
+    height: 59px;
+  }
 }

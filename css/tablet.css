@@ -206,27 +206,43 @@
   */
 
     .hero h1 {
-        width: 603.89px;
+        width: 588px;
         height: 150px;
-
         margin: 0;
         padding: 0;
 
-        display: block;
-
-        font-family: Roboto, sans-serif;
+        font-family: "Roboto", Arial, sans-serif;
         font-size: 54px;
         line-height: 75px;
         font-weight: 700;
-
+        letter-spacing: -2.5px;
         text-align: center;
 
         box-sizing: border-box;
         overflow: hidden;
     }
 
+    .hero h1 br {
+        display: none;
+    }
+
     .hero h1 .blue-word {
         color: #4356D6;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hero h1 .underline {
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+
+        width: 100%;
+        height: auto;
+        max-width: none;
+
+        margin: 0;
+        padding: 0;
     }
 
 
