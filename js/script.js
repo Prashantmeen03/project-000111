@@ -24,3 +24,27 @@ overlay.addEventListener("click", closeMenu);
 drawer.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", closeMenu);
 });
+
+function updateScale() {
+  const canvas = document.getElementById("desktop-wrapper");
+  if (!canvas) return;
+
+  const viewportWidth = window.innerWidth;
+  const DESIGN_WIDTH = 1440;
+
+  if (viewportWidth >= 1200) {
+    const scale = Math.min(viewportWidth / DESIGN_WIDTH, 1);
+    canvas.style.transform = `scale(${scale})`;
+    
+    // Fix empty space at the bottom caused by transform: scale
+    const scaledHeightDiff = canvas.offsetHeight * (1 - scale);
+    canvas.style.marginBottom = `-${scaledHeightDiff}px`;
+  } else {
+    canvas.style.transform = "none";
+    canvas.style.marginBottom = "0px";
+  }
+}
+
+window.addEventListener("resize", updateScale);
+window.addEventListener("orientationchange", updateScale);
+updateScale();

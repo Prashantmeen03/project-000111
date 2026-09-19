@@ -8,39 +8,13 @@
   <meta name="description" content="Compliance support for research analysts and firms.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/desktop.css">
   <link rel="stylesheet" href="./css/tablet.css">
   <link rel="stylesheet" href="./css/mobile.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">
-        <img src="./assets/Logo.png" alt="Logo">
-      </a>
-
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a class="active" href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Our Services</a>
-        <a href="#">Pricing</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact</a>
-      </nav>
-
-      <a class="header-contact" href="#">
-        <img src="./assets/Contact-icon.png" alt="">
-        <span>Contact Us</span>
-      </a>
-
-      <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
-        <img src="./assets/Menu.png" alt="">
-      </button>
-    </div>
-  </header>
-
   <div class="mobile-overlay" id="overlay"></div>
   <aside class="tablet-drawer" id="drawer" aria-hidden="true">
     <div class="drawer-head">
@@ -58,94 +32,130 @@
     <a class="drawer-contact" href="#">Contact Us</a>
   </aside>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <img class="hero-pattern" src="./assets/Vector1.png" alt="">
-          <h1>
-            Simplifying<br>
-            <span class="blue-word">Compliance
-              <img class="underline" src="./assets/underline-Vector.png" alt="">
-            </span>
-            For<br>
-            Research Analysts
-          </h1>
+  <main class="page">
+    <div class="desktop-design" id="desktop-wrapper">
+      <section class="hero">
+        <header class="site-header">
+          <div class="container header-inner">
+            <a class="logo" href="#">
+              <img src="./assets/Logo.png" alt="Logo">
+            </a>
 
-          <p class="hero-description">
-            Stay Focused On Your Insights—We’ll Handle The Compliance.
-            Our Expert Solutions Ensure Your Research Practices Meet Every
-            Regulatory Requirement With Confidence And Ease
-          </p>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+              <ul>
+                <li class="nav-home"><a class="active" href="#">Home</a></li>
+                <li class="nav-about"><a href="#">About Us</a></li>
+                <li class="nav-services"><a href="#">Our Services</a></li>
+                <li class="nav-pricing"><a href="#">Pricing</a></li>
+                <li class="nav-faq"><a href="#">FAQ</a></li>
+                <li class="nav-contact"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
 
-          <ul class="benefits">
-            <li><img src="./assets/check-sign.png" alt="">End-To-End Compliance Support</li>
-            <li><img src="./assets/check-sign.png" alt="">Regulatory Filings Made Simple</li>
-            <li><img src="./assets/check-sign.png" alt="">Tailored Solutions For Independent Analysts &amp; Firms</li>
-          </ul>
+            <a class="header-contact" href="#">
+              <img src="./assets/Contact-icon.png" alt="">
+              <span>Contact Us</span>
+            </a>
 
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#">Get Started</a>
-            <a class="btn btn-outline" href="#">Book A Consultation</a>
+            <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+              <img src="./assets/Menu.png" alt="">
+            </button>
+          </div>
+        </header>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <img class="hero-pattern" src="./assets/Vector1.png" alt="">
+            <h1>
+              Simplifying<br>
+              <span class="blue-word">Compliance<img class="underline" src="./assets/underline-Vector.png"
+                  alt=""></span> For<br>
+              Research Analysts
+            </h1>
+
+            <p class="hero-description">
+              Stay Focused On Your Insights—We’ll Handle The Compliance.
+              Our Expert Solutions Ensure Your Research Practices Meet Every
+              Regulatory Requirement With Confidence And Ease
+            </p>
+
+            <ul class="benefits">
+              <li><img src="./assets/check-sign.png" alt="">End-To-End Compliance Support</li>
+              <li><img src="./assets/check-sign.png" alt="">Regulatory Filings Made Simple</li>
+              <li><img src="./assets/check-sign.png" alt="">Tailored Solutions For Independent Analysts &amp; Firms</li>
+            </ul>
+
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#">Get Started</a>
+              <a class="btn btn-outline" href="#">Book A Consultation</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img class="hero-art" src="./assets/Banner Image.png" alt="Research professional illustration">
           </div>
         </div>
+      </section>
 
-        <div class="hero-visual">
-          <img class="hero-art" src="./assets/Banner Image.png" alt="Research professional illustration">
-        </div>
-      </div>
-    </section>
-
-    <section class="why-section">
-      <div class="container why-grid">
-        <div class="why-left">
+      <section class="why-section">
+        <img class="why-pattern" src="./assets/Vector1.png" alt="">
+        <div class="why-both">
           <div class="why-heading">
-            <h2>Why <span>Compliance Matters</span><br>For Research Analysts</h2>
+            <h2>
+              Why <span class="blue-word">Compliance Matters</span><br>
+              For Research Analysts
+            </h2>
           </div>
-          <div class="why-art-wrap">
-            <img src="./assets/Vector2.png" alt="" class="why-arrow">
-            <img src="./assets/Section2-Image.png" alt="Research compliance illustration" class="why-art">
-          </div>
-        </div>
 
-        <div class="why-right">
           <p class="why-intro">
             In Today’s Regulatory Environment, Even A Small Oversight Can Lead To
             Penalties, Reputational Risks, And Loss Of Client Trust. We Help Research
             Analysts And Firms Navigate Complex Compliance Requirements So They Can
             Focus On Delivering High-Quality Research Without Worry.
           </p>
+        </div>
 
-          <img src="./assets/Vector1.png" alt="" class="bottom-pattern">
+        <div class="why-grid">
+          <div class="why-left">
+            <div class="why-art-wrap">
+              <img src="./assets/Vector2.png" alt="" class="why-arrow">
+              <img src="./assets/Section2-Image.png" alt="Research compliance illustration" class="why-art">
+            </div>
+          </div>
 
-          <div class="why-cards">
-            <article class="why-card">
-              <img src="./assets/Regulatory Clarity.png" alt="">
-              <div>
-                <h3>Regulatory Clarity</h3>
-                <p>We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
-              </div>
-            </article>
+          <div class="why-right">
 
-            <article class="why-card">
-              <img src="./assets/Hassle-Free Filings Clarity.png" alt="">
-              <div>
-                <h3>Hassle-Free Filings</h3>
-                <p>From Registration To Ongoing Reporting—We Manage It End-To-End.</p>
-              </div>
-            </article>
 
-            <article class="why-card">
-              <img src="./assets/Risk Protection.png" alt="">
-              <div>
-                <h3>Risk Protection</h3>
-                <p>Stay Ahead Of Audits, Inspections, And Compliance Gaps With Proactive Support.</p>
-              </div>
-            </article>
+
+            <div class="why-cards">
+              <article class="why-card regulatory-clarity">
+                <img src="./assets/Regulatory Clarity.png" alt="" width="36" height="36">
+                <div>
+                  <h3>Regulatory Clarity</h3>
+                  <p>We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
+                </div>
+              </article>
+
+              <article class="why-card hassle-free-filings">
+                <img src="./assets/Hassle-Free Filings Clarity.png" alt="" width="36" height="36">
+                <div>
+                  <h3>Hassle-Free Filings</h3>
+                  <p>From Registration To Ongoing Reporting—We Manage It End-To-End.</p>
+                </div>
+              </article>
+
+              <article class="why-card risk-protection">
+                <img src="./assets/Risk Protection.png" alt="" width="36" height="36">
+                <div>
+                  <h3>Risk Protection</h3>
+                  <p>Stay Ahead Of Audits, Inspections, And Compliance Gaps With Proactive Support.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <script src="./js/script.js"></script>

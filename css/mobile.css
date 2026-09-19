@@ -24,64 +24,13 @@
     overflow-x: hidden;
   }
 
-  .mobile-frame-580 {
-    width: 100%;
-    max-width: 375px;
-    min-width: 0;
-    min-height: 2595px;
-    margin: 0 auto;
-
-    padding: 10px 16px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-
-    background: #fff;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
-  /* Prevent any child from creating horizontal scroll */
-  .mobile-frame-580>*,
-  .mobile-frame-580 img,
-  .mobile-frame-580 video,
-  .mobile-frame-580 iframe {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .mobile-frame-1206 {
-    display: inline-flex;
-    padding: 6px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.79);
-    backdrop-filter: blur(45.5px);
-    width: 164px;
-    height: 48px;
-    box-sizing: border-box;
-  }
-
-  .mobile-frame-1205 {
-    display: flex;
-    width: 100%;
-    /* Changed 375px to 100% for responsiveness */
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-  }
 
   .container {
     width: calc(100% - 32px);
+  }
+
+  .underline {
+    display: none;
   }
 
   main {
@@ -138,25 +87,28 @@
 
   .hero-copy {
     display: flex;
-    width: 375px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     padding: 0 16px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     position: relative;
+    box-sizing: border-box;
   }
 
 
   .hero h1 {
-    width: 343px;
-    height: 140px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     color: #000;
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 38px;
+    font-size: clamp(32px, 8vw, 38px);
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
@@ -183,9 +135,10 @@
 
   .benefits {
     width: 100%;
-    max-width: 343px;
+    max-width: 100%;
     margin: 0;
-    padding-left: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -205,53 +158,55 @@
   }
 
   .hero-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-  align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
 
-  width: 100%;
-  max-width: 343px;
-  margin: 0;
-}
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 
-.btn {
-  display: flex;
-  width: 100%;
-  height: 46px;
-  padding: 14px 22px;
+  .btn {
+    display: flex;
+    width: 100%;
+    height: 46px;
+    padding: 14px 22px;
 
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
 
-  box-sizing: border-box;
-  border-radius: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
 
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: capitalize;
-}
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
 
-/* Get Started */
-.btn-primary {
-  border: 1px solid #4356D6;
-  background: #4356D6;
-  color: #FFF;
-}
+  /* Get Started */
+  .btn-primary {
+    border: 1px solid #4356D6;
+    background: #4356D6;
+    color: #FFF;
+  }
 
-/* Book a Consultation */
-.btn-outline {
-  border: 2px solid #4356D6;
-  background: transparent;
-  color: #4356D6;
-}
+  /* Book a Consultation */
+  .btn-outline {
+    border: 2px solid #4356D6;
+    background: transparent;
+    color: #4356D6;
+  }
 
   .hero-visual {
     padding-top: 36px;
@@ -267,17 +222,28 @@
 
   .why-section {
     padding: 0 0 70px 0;
+    height: auto;
+  }
+
+  .why-both {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   .why-grid {
     display: flex;
     flex-direction: column;
     gap: var(--space-25);
+    height: auto;
   }
 
   .why-left,
   .why-right {
     display: contents;
+    width: 100%;
+    height: auto;
   }
 
   .why-heading {
@@ -286,8 +252,8 @@
     padding: 0;
     margin: 0 0 26px 0;
     width: 100%;
-    width: 343px;
-    height: 144px;
+    max-width: 100%;
+    height: auto;
   }
 
   .why-heading h2 {
@@ -296,6 +262,7 @@
     letter-spacing: -.5px;
     text-align: center;
   }
+
   .why-arrow {
     position: absolute;
     right: 20px;
@@ -307,25 +274,25 @@
     bottom: auto;
   }
 
-.why-intro {
-  order: 2;
-  margin: 0;
+  .why-intro {
+    order: 2;
+    margin: 0;
 
-  width: 100%;
-  max-width: 343px;
-  height: 256px;
-  align-self: stretch;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    align-self: stretch;
 
-  color: #000;
-  text-align: center;
+    color: #000;
+    text-align: center;
 
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  text-transform: capitalize;
-}
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: capitalize;
+  }
 
   .why-art-wrap {
     order: 3;
@@ -357,6 +324,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
 
   .why-arrow {
@@ -374,6 +342,9 @@
     gap: 16px;
     flex-direction: row;
     align-items: flex-start;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 
   .why-card>img {
@@ -390,6 +361,8 @@
   .why-card p {
     font-size: 14px;
     line-height: 1.8;
+    width: 100%;
+    height: auto;
   }
 
   /* Mobile drawer */
