@@ -66,18 +66,20 @@
 
 
     .hero {
-        width: 375px;
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
         height: 1062px;
-        margin-top: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
     .hero-grid {
-        width: 375px;
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
         height: 988px;
         padding: 0;
-        margin: 0;
         gap: 36px;
         display: flex;
         flex-direction: column;
@@ -725,5 +727,170 @@
     .mobile-overlay.open {
         opacity: 1;
         pointer-events: auto;
+    }
+
+    /* =========================================
+       MOBILE
+       ========================================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding: 0;
+
+        overflow-x: hidden;
+    }
+
+    .page,
+    .desktop-design,
+    .hero,
+    .why-section {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* =========================================
+       HERO
+       ========================================= */
+
+    .hero-grid {
+        width: 100%;
+        max-width: 375px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .hero-copy h1 {
+        width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .benefits {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    /* =========================================
+       WHY
+       ========================================= */
+
+    .why-section {
+        width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+        background: #ffffff;
+    }
+
+    .why-both,
+    .why-grid {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .why-heading {
+        width: 100%;
+        max-width: 335px;
+
+        text-align: center;
+    }
+
+    .why-intro {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .why-left,
+    .why-right {
+        width: 100%;
+        max-width: 335px;
+    }
+
+    .why-art-wrap {
+        width: 100%;
+        max-width: 335px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-art {
+        width: 100%;
+        height: auto;
     }
 }
