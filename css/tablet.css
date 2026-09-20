@@ -1,13 +1,6 @@
-/* =========================================================
-   TABLET
-   768px - 1299px
-   ========================================================= */
-
 @media (min-width: 768px) and (max-width: 1299px) {
 
-    /* =====================================================
-     GENERAL
-     ===================================================== */
+
 
     .container {
         width: calc(100% - 60px);
@@ -20,9 +13,6 @@
     }
 
 
-    /* =====================================================
-     HEADER
-     ===================================================== */
 
     .site-header {
         display: flex;
@@ -121,32 +111,13 @@
     }
 
 
-    /* =====================================================
-     HERO
-     ===================================================== */
 
     .hero {
         min-height: auto;
         overflow: hidden;
     }
 
-    /*
-     DESIGN:
 
-     Hero:
-       W = 636px
-       H = 1121px
-
-     At 768px viewport:
-
-       (768 - 636) / 2
-       = 66px
-
-     Therefore we DO NOT set left: 66px.
-
-     margin-inline: auto automatically produces
-     the correct responsive X position.
-  */
 
     .hero-grid {
         width: 636px;
@@ -169,9 +140,6 @@
     }
 
 
-    /* =====================================================
-     HERO COPY
-     ===================================================== */
 
     .hero-copy {
         width: 636px;
@@ -190,20 +158,8 @@
     }
 
 
-    /* =====================================================
-     HERO H1
-     ===================================================== */
 
-    /*
-     Original Figma:
 
-       W = 588
-       H = 150
-       Font = 54
-       Line = 75
-
-     588 / 636 = 92.45%
-  */
 
     .hero h1 {
         width: 588px;
@@ -243,23 +199,12 @@
 
         margin: 0;
         padding: 0;
+        display: block;
     }
 
 
-    /* =====================================================
-     HERO DESCRIPTION
-     ===================================================== */
 
-    /*
-     Original:
 
-       X = 24
-       Y = 176
-       W = 588
-       H = 96
-
-     We center it rather than hard-code X=24.
-  */
 
     .hero-description {
         width: 588px;
@@ -285,19 +230,8 @@
     }
 
 
-    /* =====================================================
-     BENEFITS
-     ===================================================== */
 
-    /*
-     Original:
 
-       W = 466
-       H = 108
-       gap = 6
-
-     466 / 636 = 73.27%
-  */
 
     .benefits {
         display: flex;
@@ -321,9 +255,6 @@
     }
 
 
-    /* =====================================================
-     HERO BUTTONS
-     ===================================================== */
 
     .hero-buttons {
         display: flex;
@@ -355,21 +286,8 @@
     }
 
 
-    /* =====================================================
-     HERO VISUAL
-     ===================================================== */
 
-    /*
-     Original:
 
-       W = 636
-       H = 522.3
-
-     It automatically starts at:
-
-       478px + 16px
-       = 494px
-  */
 
     .hero-visual {
         width: 636px;
@@ -392,19 +310,11 @@
     }
 
 
-    /* =====================================================
-     WHY SECTION
-     ===================================================== */
-    /* =========================================================
-   TABLET WHY SECTION
-   768px - 1299px
-   ========================================================= */
+
 
     @media (min-width: 768px) and (max-width: 1299px) {
 
-        /* =====================================================
-     WHY SECTION
-     ===================================================== */
+
 
         .why-section {
             width: 728px;
@@ -428,9 +338,6 @@
         }
 
 
-        /* =====================================================
-     WHY PATTERN
-     ===================================================== */
         .why-pattern {
             position: absolute;
             left: 0;
@@ -440,9 +347,7 @@
             z-index: 1;
         }
 
-        /* =====================================================
-     MAIN WRAPPER
-     ===================================================== */
+
 
         .why-both {
             width: 603.5px;
@@ -459,9 +364,6 @@
         }
 
 
-        /* =====================================================
-     WHY GRID
-     ===================================================== */
 
         .why-grid {
             width: 100%;
@@ -481,7 +383,6 @@
             box-sizing: border-box;
         }
 
-
         .why-left,
         .why-right {
             display: contents;
@@ -491,9 +392,6 @@
         }
 
 
-        /* =====================================================
-     HEADING
-     ===================================================== */
 
         .why-heading {
             width: 603.5px;
@@ -541,9 +439,6 @@
         }
 
 
-        /* =====================================================
-     ART / ILLUSTRATION
-     ===================================================== */
 
         .why-art-wrap {
             position: absolute;
@@ -568,16 +463,11 @@
         }
 
 
-        /* =====================================================
-     ARROW
-     ===================================================== */
 
         .why-arrow {
             position: absolute;
 
-            /*
-     * Responsive rather than fixed x-position.
-     */
+
             right: clamp(10px, 4vw, 45px);
 
             top: 0;
@@ -593,9 +483,6 @@
         }
 
 
-        /* =====================================================
-     BOTTOM DECORATIVE PATTERN
-     ===================================================== */
 
         .bottom-pattern {
             order: 5;
@@ -617,9 +504,6 @@
         }
 
 
-        /* =====================================================
-     CARDS
-     ===================================================== */
 
         .why-cards {
             position: absolute;
@@ -731,6 +615,222 @@
         .why-card.regulatory-clarity h3 {
             width: 193px;
             height: 32px;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 99;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            display: block;
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* =========================================
+           DRAWER
+           475 × 680
+           ========================================= */
+
+        .tablet-drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            width: 475px;
+            height: 680px;
+
+            background: #ffffff;
+            z-index: 100;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .tablet-drawer.open {
+            transform: translateX(0);
+        }
+
+        /* =========================================
+           DRAWER HEADER
+           475 × 54
+           ========================================= */
+
+        .drawer-head {
+            width: 475px;
+            height: 54px;
+
+            display: flex;
+            flex-direction: row;
+
+            align-items: flex-start;
+            justify-content: space-between;
+
+            gap: 10px;
+
+            padding: 10px 16px;
+            margin: 0;
+
+            box-sizing: border-box;
+
+            flex-shrink: 0;
+        }
+
+        .drawer-head img {
+            display: block;
+
+            width: auto;
+            height: auto;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        .drawer-close {
+            display: block;
+
+            padding: 0;
+            margin: 0;
+
+            width: auto;
+            height: auto;
+
+            border: none;
+            background: transparent;
+
+            color: #4356D6;
+
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1;
+
+            cursor: pointer;
+        }
+
+        /* =========================================
+           NAV
+           242 × 546
+           ========================================= */
+
+        .tablet-drawer nav {
+            width: 242px;
+            height: 546px;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            gap: 24px;
+
+            padding: 10px 10px;
+            margin: 0;
+
+            box-sizing: border-box;
+
+            flex-shrink: 0;
+        }
+
+        /* =========================================
+           NAV LINKS
+           172 × 44
+           ========================================= */
+
+        .tablet-drawer nav a {
+            width: 172px;
+            height: 44px;
+
+            min-width: 172px;
+            min-height: 44px;
+
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+
+            color: #333333;
+            text-decoration: none;
+
+            font-size: 16px;
+            font-weight: 500;
+
+            flex-shrink: 0;
+        }
+
+        .tablet-drawer nav a.active,
+        .tablet-drawer nav a:hover {
+            color: #4356D6;
+        }
+
+        /* =========================================
+           NAV ICONS
+           ========================================= */
+
+        .tablet-drawer nav a img {
+            width: 24px;
+            height: 24px;
+
+            display: block;
+
+            object-fit: contain;
+
+            padding: 0;
+            margin: 0;
+
+            flex-shrink: 0;
+        }
+
+        /* =========================================
+           CONTACT BUTTON
+           ========================================= */
+
+        .drawer-contact {
+            width: 282px;
+            height: 48px;
+
+            margin: auto 10px 16px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #4356D6;
+            color: #ffffff;
+
+            border-radius: 6px;
+
+            font-size: 16px;
+            font-weight: 600;
+
+            text-decoration: none;
+
+            box-sizing: border-box;
+
+            flex-shrink: 0;
         }
     }
 }

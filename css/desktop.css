@@ -78,12 +78,10 @@ button {
   margin-inline: auto;
 }
 
-/* MAIN */
 .main {
   width: 100%;
 }
 
-/* HEADER */
 .site-header {
   height: 100px;
   background: var(--color-bg-light);
@@ -222,7 +220,6 @@ button {
   display: none;
 }
 
-/* HERO */
 .hero {
   background: var(--color-bg-light);
   position: relative;
@@ -386,7 +383,6 @@ button {
   object-fit: contain;
 }
 
-/* WHY */
 .why-section {
   width: 100%;
   max-width: 1440px;
@@ -400,7 +396,6 @@ button {
   gap: 33px;
 }
 
-/* Extend white background to full viewport width */
 .why-section::before {
   content: "";
   position: absolute;

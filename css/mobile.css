@@ -1,508 +1,729 @@
-/* MOBILE */
 @media (min-width: 375px) and (max-width: 767px) {
 
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .page,
-  .desktop-design,
-  main {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  /* NAVBAR */
-
-  .site-header {
-    width: 100%;
-    height: 54px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .header-inner {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo img {
-    width: clamp(90px, 28vw, 105px);
-    height: auto;
-  }
-
-  .desktop-nav,
-  .header-contact {
-    display: none;
-  }
-
-  .menu-button {
-    width: 24px;
-    height: 24px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* HERO */
-
-  .hero {
-    width: 375px;
-    height: 1062px;
-    margin-top: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .hero-grid {
-    width: 375px;
-    height: 988px;
-    padding: 0;
-    margin: 0;
-    gap: 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-  }
-
-  .hero-copy {
-    width: 343px;
-    height: 650px;
-    padding: 26px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 26px;
-    box-sizing: border-box;
-  }
-
-  .hero h1 {
-    width: 343px;
-    height: 144px;
-    margin: 0;
-    padding: 0;
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .hero h1 br {
-    display: none;
-  }
-
-  .hero h1 .blue-word {
-    color: #4356D6;
-  }
-
-  .hero h1 .underline {
-    display: none;
-  }
-
-  .hero-description {
-    width: 343px;
-    height: 160px;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .benefits {
-    width: 315px;
-    height: 140px;
-    margin: 0;
-    margin-left: 14px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    align-self: flex-start;
-    box-sizing: border-box;
-  }
-
-  .benefits li {
-    width: 100%;
-    height: auto;
-    min-height: 32px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-
-  .benefits img {
-    width: 20px;
-    height: 20px;
-    flex: 0 0 20px;
-    margin-top: 6px;
-  }
-
-  .hero-buttons {
-    width: 343px;
-    height: 108px;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: flex-start;
-    box-sizing: border-box;
-  }
-
-  .btn {
-    width: 100%;
-    height: 46px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(14px, 4vw, 16px);
-    box-sizing: border-box;
-  }
-
-  .hero-visual {
-    width: 350px;
-    height: 296px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .hero-art {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  /* WHY */
-
-  .why-section {
-    width: 100%;
-    height: 1446px;
-
-    padding: 0 16px;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 36px;
-
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
-  .why-both {
-    width: 100%;
-    max-width: 343px;
-    height: 426px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 26px;
-
-    box-sizing: border-box;
-  }
-
-  .why-pattern {
-    display: block;
-    width: 85px;
-    height: 21px;
-    position: absolute;
-    left:2px;
-    top: 807px;
-  }
-
-  .why-left,
-  .why-right {
-    width: 100%;
-    height: auto;
-    display: contents;
-  }
-
-  .why-heading {
-    width: 100%;
-    height: 144px;
-
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-  }
-
-  .why-heading h2 {
-    width: 100%;
-    height: 144px;
-
-    margin: 0;
-    padding: 0;
-
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 34px;
-    line-height: 48px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-
-    text-align: center;
-
-    box-sizing: border-box;
-  }
-
-  .why-heading h2 .blue-word {
-    display: inline;
-    white-space: normal;
-  }
-
-  .why-heading h2 br {
-    display: none;
-  }
-
-  .why-intro {
-    width: 100%;
-    height: 256px;
-
-    margin: 0;
-    padding: 0;
-
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 400;
-
-    text-align: center;
-
-    box-sizing: border-box;
-  }
-
-  .why-grid {
-    width: 100%;
-    max-width: 343px;
-
-    height: 984px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 26px;
-
-    box-sizing: border-box;
-  }
-
-  .why-art-wrap {
-    width: 100%;
-    height: 343px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-
-    box-sizing: border-box;
-  }
-
-  .why-art {
-    width: 100%;
-    height: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    object-fit: contain;
-    display: block;
-  }
-
-  .why-arrow {
-    position: absolute;
-
-    left: 283px;
-    top: 440px;
-
-    width: 73px;
-    height: 63px;
-
-    margin: 0;
-    padding: 0;
-
-    z-index: 2;
-  }
-
-  .why-cards {
-    width: 100%;
-    height: 615px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 26px;
-
-    box-sizing: border-box;
-  }
-
-  .why-card {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-
-    margin: 0;
-    padding: 16px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    gap: 11px;
-    flex-shrink: 0;
-
-    box-sizing: border-box;
-  }
-
-  .why-card.regulatory-clarity {
-    height: 177px;
-  }
-
-  .why-card.hassle-free-filings {
-    height: 204px;
-  }
-
-  .why-card.risk-protection {
-    height: 182px;
-  }
-
-  .why-card>img {
-    width: 36px;
-    height: 36px;
-
-    margin: 0;
-    padding: 0;
-
-    flex: 0 0 36px;
-
-    object-fit: contain;
-  }
-
-  .why-card>div {
-    width: calc(100% - 48px);
-    min-width: 0;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 6px;
-
-    box-sizing: border-box;
-  }
-
-  .why-card h3 {
-    width: 100%;
-    height: auto;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 600;
-
-    white-space: normal;
-
-    box-sizing: border-box;
-  }
-
-  .why-card p {
-    width: 100%;
-    height: auto;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 400;
-
-    box-sizing: border-box;
-  }
-
-  .why-card.regulatory-clarity h3 {
-    width: 193px;
-    height: 32px;
-  }
-
-  .why-card.regulatory-clarity p {
-    width: 241px;
-    height: 107px;
-  }
-
-  .why-card.hassle-free-filings h3 {
-    width: 241px;
-    height: 61px;
-  }
-
-  .why-card.hassle-free-filings p {
-    width: 241px;
-    height: 92px;
-  }
-
-  .why-card.risk-protection h3 {
-    width: 165px;
-    height: 32px;
-  }
-
-  .why-card.risk-protection p {
-    width: 241px;
-    height: 59px;
-  }
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .page,
+    .desktop-design,
+    main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+
+
+    .site-header {
+        width: 100%;
+        height: 54px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .header-inner {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: clamp(90px, 28vw, 105px);
+        height: auto;
+    }
+
+    .desktop-nav,
+    .header-contact {
+        display: none;
+    }
+
+    .menu-button {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    .hero {
+        width: 375px;
+        height: 1062px;
+        margin-top: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-grid {
+        width: 375px;
+        height: 988px;
+        padding: 0;
+        margin: 0;
+        gap: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .hero-copy {
+        width: 343px;
+        height: 650px;
+        padding: 26px 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 26px;
+        box-sizing: border-box;
+    }
+
+    .hero h1 {
+        width: 343px;
+        height: 144px;
+        margin: 0;
+        padding: 0;
+        font-size: 38px;
+        line-height: 48px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .hero h1 br {
+        display: none;
+    }
+
+    .hero h1 .blue-word {
+        color: #4356D6;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hero h1 .underline {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-description {
+        width: 343px;
+        height: 160px;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .benefits {
+        width: 315px;
+        height: 140px;
+        margin: 0;
+        margin-left: 14px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        align-self: flex-start;
+        box-sizing: border-box;
+    }
+
+    .benefits li {
+        width: 100%;
+        height: auto;
+        min-height: 32px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .benefits img {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 20px;
+        margin-top: 6px;
+    }
+
+    .hero-buttons {
+        width: 343px;
+        height: 108px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: flex-start;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        width: 100%;
+        height: 46px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(14px, 4vw, 16px);
+        box-sizing: border-box;
+    }
+
+    .hero-visual {
+        width: 350px;
+        height: 296px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-art {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+
+    .why-section {
+        width: 100%;
+        height: 1446px;
+
+        padding: 0 16px;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 36px;
+
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .why-both {
+        width: 100%;
+        max-width: 343px;
+        height: 426px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 26px;
+
+        box-sizing: border-box;
+    }
+
+    .why-pattern {
+        display: block;
+        width: 85px;
+        height: 21px;
+        position: absolute;
+        left: 2px;
+        top: 807px;
+    }
+
+    .why-left,
+    .why-right {
+        width: 100%;
+        height: auto;
+        display: contents;
+    }
+
+    .why-heading {
+        width: 100%;
+        height: 144px;
+
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    .why-heading h2 {
+        width: 100%;
+        height: 144px;
+
+        margin: 0;
+        padding: 0;
+
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .why-heading h2 .blue-word {
+        display: inline;
+        white-space: normal;
+    }
+
+    .why-heading h2 br {
+        display: none;
+    }
+
+    .why-intro {
+        width: 100%;
+        height: 256px;
+
+        margin: 0;
+        padding: 0;
+
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .why-grid {
+        width: 100%;
+        max-width: 343px;
+
+        height: 984px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 26px;
+
+        box-sizing: border-box;
+    }
+
+    .why-art-wrap {
+        width: 100%;
+        height: 343px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        box-sizing: border-box;
+    }
+
+    .why-art {
+        width: 100%;
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        object-fit: contain;
+        display: block;
+    }
+
+    .why-arrow {
+        position: absolute;
+
+        left:300px;
+        top:-50px;
+
+        width: 35px;
+        height: 63px;
+
+        margin: 0;
+        padding: 0;
+
+        z-index: 2;
+    }
+
+    .why-cards {
+        width: 100%;
+        height: 615px;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 26px;
+
+        box-sizing: border-box;
+    }
+
+    .why-card {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+
+        margin: 0;
+        padding: 16px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        gap: 11px;
+        flex-shrink: 0;
+
+        box-sizing: border-box;
+    }
+
+    .why-card.regulatory-clarity {
+        height: 177px;
+    }
+
+    .why-card.hassle-free-filings {
+        height: 204px;
+    }
+
+    .why-card.risk-protection {
+        height: 182px;
+    }
+
+    .why-card>img {
+        width: 36px;
+        height: 36px;
+
+        margin: 0;
+        padding: 0;
+
+        flex: 0 0 36px;
+
+        object-fit: contain;
+    }
+
+    .why-card>div {
+        width: calc(100% - 48px);
+        min-width: 0;
+
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 6px;
+
+        box-sizing: border-box;
+    }
+
+    .why-card h3 {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+
+        white-space: normal;
+
+        box-sizing: border-box;
+    }
+
+    .why-card p {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+
+        box-sizing: border-box;
+    }
+
+    .why-card.regulatory-clarity h3 {
+        width: 193px;
+        height: 32px;
+    }
+
+    .why-card.regulatory-clarity p {
+        width: 241px;
+        height: 107px;
+    }
+
+    .why-card.hassle-free-filings h3 {
+        width: 241px;
+        height: 61px;
+    }
+
+    .why-card.hassle-free-filings p {
+        width: 241px;
+        height: 92px;
+    }
+
+    .why-card.risk-protection h3 {
+        width: 165px;
+        height: 32px;
+    }
+
+    .why-card.risk-protection p {
+        width: 241px;
+        height: 59px;
+    }
+
+    /* =========================================
+       MOBILE DRAWER
+       375 × 680
+       ========================================= */
+
+    .tablet-drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        width: 375px;
+        height: 680px;
+
+        background: #ffffff;
+        z-index: 100;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .tablet-drawer.open {
+        transform: translateX(0);
+    }
+
+    /* =========================================
+       DRAWER HEADER
+       327 × 54
+       ========================================= */
+
+    .drawer-head {
+        width: 327px;
+        height: 54px;
+
+        display: flex;
+        flex-direction: row;
+
+        align-items: flex-start;
+        justify-content: space-between;
+
+        gap: 10px;
+
+        padding: 10px 16px;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        flex-shrink: 0;
+    }
+
+    .drawer-head img {
+        display: block;
+
+        width: auto;
+        height: auto;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .drawer-close {
+        display: block;
+
+        width: auto;
+        height: auto;
+
+        padding: 0;
+        margin: 0;
+
+        border: none;
+        background: transparent;
+
+        color: #4356D6;
+
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 1;
+
+        cursor: pointer;
+    }
+
+    /* =========================================
+       MOBILE NAV
+       282 × 546
+       ========================================= */
+
+    .tablet-drawer nav {
+        width: 282px;
+        height: 546px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 24px;
+
+        padding: 10px 10px;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        flex-shrink: 0;
+    }
+
+    /* =========================================
+       NAV ITEM
+       ========================================= */
+
+    .tablet-drawer nav a {
+        width: 172px;
+        height: 44px;
+
+        min-width: 172px;
+        min-height: 44px;
+
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 0;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        color: #333333;
+        text-decoration: none;
+
+        font-size: 16px;
+        font-weight: 500;
+
+        flex-shrink: 0;
+    }
+
+    .tablet-drawer nav a.active,
+    .tablet-drawer nav a:hover {
+        color: #4356D6;
+    }
+
+    /* =========================================
+       NAV ICON
+       ========================================= */
+
+    .tablet-drawer nav a img {
+        width: 24px;
+        height: 24px;
+
+        display: block;
+
+        object-fit: contain;
+
+        padding: 0;
+        margin: 0;
+
+        flex-shrink: 0;
+    }
+
+    /* =========================================
+       CONTACT BUTTON
+       ========================================= */
+
+    .drawer-contact {
+        width: 282px;
+        height: 48px;
+
+        margin: auto 10px 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #4356D6;
+        color: #ffffff;
+
+        border-radius: 6px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        box-sizing: border-box;
+
+        flex-shrink: 0;
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 99;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        display: block;
+    }
+
+    .mobile-overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
