@@ -34,6 +34,12 @@ A modern, responsive landing page designed for research analysts and firms to ma
 2. Open `index.html` in your preferred web browser to view the project.
 3. No build steps or package managers are required.
 
+## Netlify Deployment
+
+The root-level `netlify.toml` sets both the base and publish directories to the repository root (`.`) and leaves the build command empty. Netlify serves the existing HTML, CSS, JavaScript, and image files directly; no `dist` directory or npm build command is needed.
+
+These settings override the corresponding Netlify UI settings and avoid relying on an absolute build-machine path such as `/opt/build`.
+
 ## Key Benefits Highlighted
 
 - End-To-End Compliance Support
